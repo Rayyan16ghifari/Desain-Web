@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .header {
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/21/14/48/banner-949946_1280.jpg'); /* Banner web */
+            background-size: cover; /* Gambar menutupi seluruh header */
+            background-position: center center; /* Posisi gambar di tengah */
+            color: white;
+            padding: 10px 20px; /* Padding diperkecil */
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Pusatkan vertikal */
+            height: 100px; /* Tinggi header disesuaikan */
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay gelap untuk meningkatkan keterbacaan teks */
+            z-index: 1;
+        }
+        .header h1, .header nav, .logo {
+            position: relative;
+            z-index: 2; /* Pastikan teks dan logo di atas overlay */
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em; /* Ukuran font diperkecil */
+        }
+        .header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Margin dihapus */
+        }
+        .header nav ul li {
+            display: inline;
+            margin-right: 15px; /* Jarak antara menu diperkecil */
+        }
+        .header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em; /* Ukuran font diperkecil */
+        }
+        .header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            width: 80px; /* Ukuran logo diperkecil */
+            height: auto;
+        }
+        .logo-left {
+            margin-right: 15px; /* Jarak antara logo kiri dan teks diperkecil */
+        }
+        .logo-right {
+            margin-left: 15px; /* Jarak antara logo kanan dan teks diperkecil */
+        }
+        audio {
+            display: none; /* Sembunyikan elemen audio */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Logo NF Academy di sisi kiri -->
+        <div class="logo logo-left">
+            <img src="logo-NF-Academy-02_single.png" alt="NF Academy Logo">
+        </div>
+        <div>
+            <h1>Welcome to My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html" target="main">Home</a></li>
+                    <li><a href="study.html" target="main">MyStudy</a></li>
+                    <li><a href="gallery.html" target="main">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Logo Kampus Merdeka di sisi kanan -->
+        <div class="logo logo-right">
+            <img src="logo kmpsmerdeka.png" alt="Kampus Merdeka Logo">
+        </div>
+    </div>
+
+</body>
+</html>

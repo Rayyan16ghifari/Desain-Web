@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(35, 134, 215);
+    color: #333;
+}
+
+.header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Tambahkan Flexbox */
+    justify-content: space-between; /* Logo kiri, konten tengah, logo kanan */
+    align-items: center; /* Pusatkan vertikal */
+}
+.header nav ul {
+    position: relative;
+    top: 15px; /* Geser ke bawah */
+}
+.header div h1 {
+    font-size: 38px;
+    position: relative;
+    top: 5px;
+}
+.left-content legend {
+    padding-top: 5px; /* Geser sedikit ke bawah */
+    position: relative;
+    top: 15px; /* Sesuaikan jika perlu lebih turun */
+}
+.right-content legend {
+    padding-top: 10px;
+    position: relative;
+    top: 17px;
+}
+
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.profile-text {
+    color: white !important; /* Paksa semua teks menjadi putih */
+}
+.profile-text h1 {
+    color: white !important; /* Paksa warna putih pada judul */
+}
+
+.profile-text p {
+    color: white !important; /* Paksa warna putih pada judul */
+}
+
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk logo */
+.logo {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto; /* Proporsi gambar tetap terjaga */
+}
+
+.logo-left {
+    margin-right: 20px; /* Jarak antara logo kiri dan konten tengah */
+}
+
+.logo-right {
+    margin-left: 20px; /* Jarak antara logo kanan dan konten tengah */
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Tata letak vertikal pada layar kecil */
+        padding: 10px;
+    }
+    .logo {
+        width: 80px; /* Ukuran logo lebih kecil pada layar kecil */
+    }
+    .logo-left, .logo-right {
+        margin: 10px 0; /* Jarak antara logo dan konten pada layar kecil */
+    }
+}

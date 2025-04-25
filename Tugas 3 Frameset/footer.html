@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .footer {
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/21/14/48/banner-949946_1280.jpg'); /* Banner web */
+            background-size: cover; /* Gambar menutupi seluruh footer */
+            background-position: center center; /* Posisi gambar di tengah */
+            color: white;
+            text-align: center;
+            padding: 5px 15px; /* Padding atas diperkecil */
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            height: 80px; /* Tinggi footer disesuaikan */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Pusatkan vertikal */
+            align-items: center; /* Pusatkan horizontal */
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay gelap untuk meningkatkan keterbacaan teks */
+            z-index: 1;
+        }
+        .footer p {
+            margin: 0; /* Margin dihapus */
+            font-size: 1em;
+            position: relative;
+            z-index: 2; /* Pastikan teks di atas overlay */
+            transform: translateY(-5px); /* Geser teks ke atas */
+        }
+        .footer p span {
+            animation: changeColor 5s infinite; /* Animasi perubahan warna */
+        }
+        @keyframes changeColor {
+            0% {
+                color: rgb(255, 0, 0); /* Merah */
+            }
+            25% {
+                color: rgb(0, 255, 0); /* Hijau */
+            }
+            50% {
+                color: rgb(0, 0, 255); /* Biru */
+            }
+            75% {
+                color: rgb(255, 215, 0); /* Emas */
+            }
+            100% {
+                color: rgb(255, 0, 255); /* Magenta */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <p><span>Created by: Muhammad Rayyan Ghifari | Universitas Muhammadiyah Jakarta</span></p>
+        <p><span>Email : hafizh17bukhori@gmail.com</span></p>
+    </div>
+    
+</body>
+</html>

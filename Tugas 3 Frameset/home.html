@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:rgb(35, 134, 215);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            opacity: 0; /* Awalnya elemen tidak terlihat */
+            animation: fadeIn 1s ease-in-out forwards; /* Efek transisi fade in */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Mulai dari transparan */
+            }
+            to {
+                opacity: 1; /* Menjadi terlihat sepenuhnya */
+            }
+        }
+        .content {
+            background-color:rgb(35, 134, 215);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            transform: translateY(20px); /* Awalnya elemen sedikit turun */
+            animation: slideUp 0.5s ease-in-out forwards; /* Efek transisi slide up */
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px); /* Mulai dari posisi sedikit turun */
+            }
+            to {
+                transform: translateY(0); /* Kembali ke posisi normal */
+            }
+        }
+        .profile-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .profile-text h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .profile-text p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .profile-photo {
+            flex: 1;
+            text-align: center;
+        }
+        .profile-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="profile-text">
+            <h1>Personal Profile</h1>
+            <p>Nama: Muhammad Rayyan Ghifari</p>
+            <p>Umur: 22 tahun</p>
+            <p>Hobi: Programming, Cyber Security, Gaming</p>
+        </div>
+        <div class="profile-photo">
+            <!-- Slot untuk foto -->
+            <img src="Foto CV Putih.jpg" alt="Foto Profil">
+        </div>
+    </div>
+  
+</body>
+</html>
