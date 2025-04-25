@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255); /* Latar belakang putih */
+    color: white;
+}
+
+/* Layout container */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "left main right"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Style dasar untuk setiap elemen */
+.header, .nav, .sidebar-left, .main-content, .sidebar-right, .footer {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Warna dan style untuk masing-masing bagian */
+.header {
+    grid-area: header;
+    background-color: rgba(68, 64, 65, 0.77);
+    font-size: 1.7em;
+}
+
+/* Style untuk navigasi */
+.nav {
+    grid-area: nav;
+    background-color: rgba(68, 64, 65, 0.77);
+    font-size: 1.3em;
+}
+
+/* Mengubah menu navigasi menjadi horizontal */
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: rgba(59, 47, 50, 0.77);
+    border-radius: 5px;
+}
+
+.nav ul li a:hover {
+    background-color: rgba(100, 90, 95, 0.8);
+}
+
+/* Style sidebar kiri dan kanan */
+.sidebar-left {
+    grid-area: left;
+    background-color: rgba(68, 64, 65, 0.77);
+    font-size: 1.1em;
+}
+
+.sidebar-right {
+    grid-area: right;
+    background-color: rgba(68, 64, 65, 0.77);
+    font-size: 1.1em;
+}
+
+.main-content {
+    grid-area: main;
+    background-color: rgba(59, 47, 50, 0.77);
+    font-size: 1.4em;
+}
+
+/* Style footer */
+.footer {
+    grid-area: footer;
+    background-color: rgba(68, 64, 65, 0.77);
+    font-size: 1.2em;
+}
+
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
