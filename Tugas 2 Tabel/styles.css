@@ -1,0 +1,43 @@
+body {
+  font-family: "Times New Roman", Times, serif, sans-serif;
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #4CAF50; /* Warna border hijau */
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50; /* Warna latar belakang header hijau */
+  color: white; /* Warna teks header putih */
+}
+
+tfoot td {
+  background-color: #4CAF50; /* Warna latar belakang footer hijau */
+  color: white; /* Warna teks footer putih */
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+/* Warna RGB pada teks footer */
+.rgb-text {
+  font-weight: bold;
+  background-image: linear-gradient(to right, red, green, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}

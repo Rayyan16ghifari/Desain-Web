@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Kuliah</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif, sans-serif;
+        margin: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #4CAF50; /* Warna border hijau */
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #4CAF50; /* Warna latar belakang header hijau */
+        color: white; /* Warna teks header putih */
+      }
+      tfoot td {
+        background-color: #4CAF50; /* Warna latar belakang footer hijau */
+        color: white; /* Warna teks footer putih */
+        font-weight: bold;
+      }
+      footer {
+        margin-top: 20px;
+        text-align: center;
+        font-style: italic;
+        color: rgb(255, 0, 0); /* Warna teks merah */
+      }
+      
+      /* Tambahkan efek warna RGB */
+      @keyframes rgb {
+        0% { color: rgb(255, 0, 0); } /* Merah */
+        33% { color: rgb(0, 255, 0); } /* Hijau */
+        66% { color: rgb(0, 0, 255); } /* Biru */
+        100% { color: rgb(255, 0, 0); } /* Merah */
+      }
+      footer {
+        animation: rgb 3s infinite; /* Animasi warna RGB selama 3 detik, berulang terus */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Jadwal Kuliah</h1>
+    <h2>Kampus Nurul Fikri Academy</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>HARI</th>
+          <th>JAM</th>
+          <th>MATA KULIAH</th>
+          <th>DOSEN</th>
+          <th>RUANG</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">SENIN</td>
+          <td>08.00 - 10.00</td>
+          <td>Kajian Islam</td>
+          <td>Ust. Anwar Nashidin, Lc.</td>
+          <td>Ruang Teori</td>
+        </tr>
+        <tr>
+          <td>10.00 - 12.00</td>
+          <td>Aplikasi Perkantoran</td>
+          <td>Drs. MGS Hendri, M.M</td>
+          <td rowspan="5">Ruang I</td>
+        </tr>
+        <tr>
+          <td rowspan="2">SELASA</td>
+          <td>08.00 - 10.00</td>
+          <td>Linux Fundamental</td>
+          <td>Henry Saptono, S.Si, M.Kom</td>
+        </tr>
+        <tr>
+          <td>10.00 - 12.00</td>
+          <td>Html, Css & Javascript</td>
+          <td rowspan="3">Sirojul Munir, S.Si, M.Kom</td>
+        </tr>
+        <tr>
+          <td rowspan="2">RABU</td>
+          <td>08.00 - 10.00</td>
+          <td>Basis Data</td>
+        </tr>
+        <tr>
+          <td>10.00 - 12.00</td>
+          <td>Algoritma dan Pemrograman</td>
+        </tr>
+        <tr>
+          <td rowspan="2">KAMIS</td>
+          <td>08.00 - 10.00</td>
+          <td>Kewirausahaan & Pengembangan Diri</td>
+          <td>Khoirul Umam, S.Pd</td>
+          <td rowspan="2">Ruang Teori</td>
+        </tr>
+        <tr>
+          <td>10.00 - 12.00</td>
+          <td>Bahasa Inggris</td>
+          <td>Drs. Mahfudz</td>
+          
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">JADWAL DAPAT BERUBAH SEWAKTU-WAKTU</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Tambahkan footer di sini -->
+    <footer>
+      Created by Muhammad Rayyan Ghifari
+    </footer>
+  </body>
+</html>
