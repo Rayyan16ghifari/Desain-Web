@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Study | NF Academy</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Custom Style -->
+  <style>
+    body {
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 60px;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .table thead th {
+      vertical-align: middle;
+    }
+    .table tbody tr:hover {
+      background-color: #f1f9ff;
+    }
+    .table-responsive {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .text-primary {
+      color: #0d6efd !important;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="col-md-10 col-lg-8 mx-auto">
+    <div class="card shadow-lg border-0 rounded-4">
+      <div class="card-body p-5">
+        <h2 class="text-center fw-bold text-primary mb-4">
+          <i class="bi bi-mortarboard-fill me-2"></i>Riwayat Pendidikan
+        </h2>
+        <p class="text-center text-muted mb-4">Perjalanan pendidikan saya dari sekolah dasar hingga perguruan tinggi.</p>
+
+        <div class="table-responsive">
+          <table class="table table-hover align-middle text-center shadow-sm rounded-3">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col"><i class="bi bi-calendar2-week"></i> Tahun</th>
+                <th scope="col"><i class="bi bi-building"></i> Institusi</th>
+                <th scope="col"><i class="bi bi-award-fill"></i> Gelar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2015 - 2018</td>
+                <td>SMP Example</td>
+                <td>Junior High School</td>
+              </tr>
+              <tr>
+                <td>2018 - 2021</td>
+                <td>SMA Example</td>
+                <td>Senior High School</td>
+              </tr>
+              <tr>
+                <td>2021 - Sekarang</td>
+                <td>STT Nurul Fikri</td>
+                <td>Bachelor's Degree</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-4">
+          <a href="index.html" class="btn btn-outline-primary rounded-pill px-4">
+            <i class="bi bi-arrow-left-circle"></i> Kembali ke Menu
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

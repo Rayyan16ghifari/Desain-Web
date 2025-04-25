@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .carousel img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: slideBanner 10s infinite;
+  }
+  
+  @keyframes slideBanner {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+  }
+  
+  aside ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  aside ul li {
+    margin-bottom: 10px;
+  }
+  
+  aside ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  aside ul li a:hover {
+    color: #0056b3;
+  }
+  
+  footer {
+    margin-top: 20px;
+    background-color: #15181a;
+    padding: 15px 0;
+    color: white;
+  }
+  
