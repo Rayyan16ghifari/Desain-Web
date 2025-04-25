@@ -1,0 +1,104 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #81d7e1;
+    padding: 20px;
+    text-align: center;
+    background: url('images/header.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#navigation {
+    background-color: #10a5b2;
+    padding: 10px;
+    text-align: center;
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navigation ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navigation ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#main-content {
+    display: flex;
+    padding: 20px;
+}
+
+#content-left, #content-right {
+    flex: 1;
+    background-color: #38e1e1;
+    padding: 20px;
+    height: 350px;
+    margin: 10px;
+}
+
+#content-main {
+    flex: 2;
+    background-color: #e1f7f7;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+#content-main img {
+    width: 200px;  /* Atur ukuran gambar agar seragam */
+    height: 200px; /* Tetapkan tinggi agar gambar tidak terdistorsi */
+    object-fit: cover; /* Pastikan gambar tetap rapi */
+    margin: 10px; /* Beri jarak antar gambar */
+    border-radius: 10px; /* Tambahkan sudut membulat agar lebih estetik */
+    border: 3px solid #ddd; /* Tambahkan border agar lebih menarik */
+    transition: transform 0.3s ease-in-out; /* Efek animasi */
+}
+
+#footer {
+    width: 96%;
+    background-color: #0e8fa2;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #14a5b2;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #087df2c6;
+}
+
+footer {
+    background-color: #095eb4;
+}

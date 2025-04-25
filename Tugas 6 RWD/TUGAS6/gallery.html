@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            opacity: 0; /* Awalnya elemen tidak terlihat */
+            animation: fadeIn 1s ease-in-out forwards; /* Efek transisi fade in */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Mulai dari transparan */
+            }
+            to {
+                opacity: 1; /* Menjadi terlihat sepenuhnya */
+            }
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            transform: translateY(20px); /* Awalnya elemen sedikit turun */
+            animation: slideUp 0.5s ease-in-out forwards; /* Efek transisi slide up */
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px); /* Mulai dari posisi sedikit turun */
+            }
+            to {
+                transform: translateY(0); /* Kembali ke posisi normal */
+            }
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        marquee {
+            display: flex;
+            align-items: center;
+            height: 300px; /* Tinggi marquee disesuaikan */
+            overflow: hidden;
+        }
+        marquee img {
+            height: 250px; /* Tinggi gambar disesuaikan */
+            width: auto; /* Lebar gambar menyesuaikan proporsi */
+            margin: 0 10px; /* Jarak antara gambar */
+            border-radius: 8px; /* Sudut gambar melengkung */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Gallery</h1>
+        <marquee>
+            <img src="image1.jpeg" alt="Image 1">
+            <img src="image2.jpeg" alt="Image 2">
+            <img src="image3.jpeg" alt="Image 3">
+            <img src="image4.jpeg" alt="Image 4">
+            <img src="image5.jpeg" alt="Image 5">
+        </marquee>
+    </div>
+</body>
+</html>
