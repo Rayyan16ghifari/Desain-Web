@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* Biru tua */
+    color: #fff; /* Teks jadi putih biar kontras */
+}
+
+.header {
+    background: linear-gradient(135deg, #001f3f, #003366); /* Gradasi biru tua */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav ul {
+    position: relative;
+    top: 15px;
+}
+
+.header div h1 {
+    font-size: 38px;
+    position: relative;
+    top: 5px;
+}
+
+.left-content {
+    padding: 10px;
+}
+
+.left-content fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.left-content legend {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 37px; /* Ini akan mendorong isi legend turun */
+}
+
+.left-content legend i {
+    margin-right: 10px; /* Jarak antara ikon pin dan teks */
+    color: red; /* Warna ikon pin merah */
+}
+
+.left-content legend span {
+    margin-left: auto; /* Menempatkan kata "Teman" di sebelah kanan */
+}
+
+.left-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-content ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.left-content ul li i {
+    margin-right: 10px; /* Jarak antara ikon Instagram dan teks */
+    color: #E1306C; /* Warna ikon Instagram */
+}
+
+.left-content ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-content ul li a:hover {
+    color: #6a11cb; /* Warna saat hover */
+}
+
+.right-content legend {
+    padding-top: 10px;
+    position: relative;
+    top: 17px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.profile-text {
+    color: white !important;
+}
+
+.profile-text h1,
+.profile-text p {
+    color: white !important;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.logo-left {
+    margin-right: 20px;
+}
+
+.logo-right {
+    margin-left: 20px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #002b5c; /* Warna background content agak lebih terang dari body */
+    color: white; /* Biar teks tetap terbaca */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: linear-gradient(135deg, #003366, #001f3f);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .logo-left, .logo-right {
+        margin: 10px 0;
+    }
+}

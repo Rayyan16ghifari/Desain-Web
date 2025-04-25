@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #001f3f; /* Biru tua */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+      color: white; /* Warna teks default jadi putih */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .content {
+      background-color: #002b5c; /* Biru tua lebih terang */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      transform: translateY(20px);
+      animation: slideUp 0.5s ease-in-out forwards;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .profile-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .profile-text h1 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .profile-text p {
+      font-size: 1.1em;
+      color: #dddddd;
+      margin-bottom: 10px;
+    }
+
+    .profile-photo {
+      flex: 1;
+      text-align: center;
+    }
+
+    .profile-photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="profile-text">
+      <h1>Personal Profile</h1>
+      <p>Nama: Muhammad Rayyan Ghifari</p>
+      <p>Umur: 22 tahun</p>
+      <p>Hobi: Programming, Cyber Security, Gaming</p>
+    </div>
+    <div class="profile-photo">
+      <img src="Foto CV Putih.jpg" alt="Foto Profil" />
+    </div>
+  </div>
+</body>
+</html>

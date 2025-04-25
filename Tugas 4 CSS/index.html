@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #afafcd;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+        .header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<frameset rows="15%,*,10%" cols="*">
+    <frame src="header.html" name="header" scrolling="no">
+    <frameset cols="20%,*,20%">
+        <frame src="left.html" name="left" scrolling="auto">
+        <frame src="home.html" name="main" scrolling="auto">
+        <frame src="right.html" name="right" scrolling="auto">
+    </frameset>
+    <frame src="footer.html" name="footer" scrolling="no">
+</frameset>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tambahkan Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .right-content {
+            padding: 10px;
+        }
+        .right-content fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .right-content legend {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+        }
+        .right-content legend i {
+            margin-right: 10px; /* Jarak antara ikon buku dan teks */
+            color: #6a11cb; /* Warna ikon buku */
+        }
+        .right-content ul {
+            list-style-type: none; /* Menghilangkan bullet points default */
+            padding: 0;
+        }
+        .right-content ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .right-content ul li a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .right-content ul li a:hover {
+            color: #6a11cb; /* Warna saat hover */
+        }
+        .right-content ul li a img {
+            width: 30px; /* Ukuran logo */
+            height: auto;
+            margin-right: 10px; /* Jarak antara logo dan teks */
+        }
+    </style>
+</head>
+<body>
+    <div class="right-content">
+        <fieldset>
+            <legend>
+                <i class="fas fa-book fa-2x"></i> <!-- Ikon buku besar -->
+                Link Materi Pembelajaran
+            </legend>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/html/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+                        <span class="logo-text"><b>HTML</b></span> <!-- Logo HTML -->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/css/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+                        <span class="logo-text"><b>CSS</b></span> <!-- Logo CSS -->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/js/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+                        <span class="logo-text"><b>JavaScript</b></span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/react/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+                        <span class="logo-text"><b>React JS</b></span> <!-- Logo React -->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/nodejs/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo"> <!-- Logo Node.js -->
+                        <span class="logo-text"><b>Node JS</b></span> <!-- Logo CSS -->
+                    </a>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+</body>
+</html>
